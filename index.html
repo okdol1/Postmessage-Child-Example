@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>postMessage_example_child</title>
+  </head>
+  <body>
+    <main>
+      <h1>📦 자식 웹</h1>
+
+      <section>
+        <label for="originInput">부모 웹 URL:</label>
+        <input
+          id="originInput"
+          placeholder="https://www.example.com"
+          value="https://www.eunbinyeon.com"
+        />
+      </section>
+
+      <section>
+        <h2>수신 데이터</h2>
+        <div id="messageDisplay">
+          <p>아직 메시지를 받지 못했어요</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>액션 메시지 보내기</h2>
+        <div class="actions">
+          <button id="scrollTopBtn">부모 웹 스크롤 최상단 이동</button>
+          <button id="backBtn">부모 웹 뒤로가기</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
